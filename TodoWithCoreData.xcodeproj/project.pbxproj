@@ -12,7 +12,9 @@
 		DAAD242A215D32060059C3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAD2428215D32060059C3FF /* Main.storyboard */; };
 		DAAD242C215D32060059C3FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAD242B215D32060059C3FF /* Assets.xcassets */; };
 		DAAD242F215D32060059C3FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAD242D215D32060059C3FF /* LaunchScreen.storyboard */; };
-		DAAD2437215E830C0059C3FF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2436215E830C0059C3FF /* Item.swift */; };
+		DAAD245F215EE1EA0059C3FF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAAD245D215EE1EA0059C3FF /* DataModel.xcdatamodeld */; };
+		DAAD2462215EE32A0059C3FF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAD2461215EE32A0059C3FF /* CoreData.framework */; };
+		DAAD2466215F13A80059C3FF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2465215F13A80059C3FF /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		DAAD242B215D32060059C3FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAAD242E215D32060059C3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAAD2430215D32060059C3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAAD2436215E830C0059C3FF /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DAAD245E215EE1EA0059C3FF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		DAAD2461215EE32A0059C3FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DAAD2465215F13A80059C3FF /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAD2462215EE32A0059C3FF /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				DAAD2423215D32060059C3FF /* TodoWithCoreData */,
 				DAAD2422215D32060059C3FF /* Products */,
+				DAAD2460215EE32A0059C3FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,7 +74,7 @@
 		DAAD2438215E83110059C3FF /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				DAAD2436215E830C0059C3FF /* Item.swift */,
+				DAAD245D215EE1EA0059C3FF /* DataModel.xcdatamodeld */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -76,6 +82,7 @@
 		DAAD2439215E83340059C3FF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DAAD2465215F13A80059C3FF /* CategoryViewController.swift */,
 				DAAD2426215D32060059C3FF /* TodoListViewController.swift */,
 			);
 			name = Controller;
@@ -97,6 +104,14 @@
 				DAAD242D215D32060059C3FF /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAAD2460215EE32A0059C3FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAAD2461215EE32A0059C3FF /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAD2466215F13A80059C3FF /* CategoryViewController.swift in Sources */,
 				DAAD2427215D32060059C3FF /* TodoListViewController.swift in Sources */,
-				DAAD2437215E830C0059C3FF /* Item.swift in Sources */,
+				DAAD245F215EE1EA0059C3FF /* DataModel.xcdatamodeld in Sources */,
 				DAAD2425215D32060059C3FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +354,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAAD245D215EE1EA0059C3FF /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAAD245E215EE1EA0059C3FF /* DataModel.xcdatamodel */,
+			);
+			currentVersion = DAAD245E215EE1EA0059C3FF /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DAAD2419215D32060059C3FF /* Project object */;
 }
